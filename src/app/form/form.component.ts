@@ -143,11 +143,11 @@ export class FormComponent implements OnInit {
       }
 
       this.fillWhite(ctx);
-      ctx.font = '20px cursive';
+      ctx.font = '20px Verdana';
       ctx.textAlign = 'center';
       ctx.fillStyle = '#00269F';
       ctx.fillText(this.fullName, 298, yName);
-      ctx.font = '16px cursive';
+      ctx.font = '16px Verdana';
       if (this.class) {
         ctx.fillText(this.class, 298, yClass);
       }
