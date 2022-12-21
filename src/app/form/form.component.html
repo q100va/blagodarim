@@ -1,79 +1,9 @@
-<div class="wrapper">
-  <div class="left">
-    <p-card header="Введите данные для оформления сертификата"
-      [style]="{'width': '100%', 'margin-bottom': '2em', 'height': '100%', 'padding-left': '20px', 'padding-right': '20px', 'padding-top': '70px'}">
+<p-tabView>
+  <p-tabPanel header="Форма для взрослых и старшеклассников">
+<app-older></app-older>
 
-      <h3>Имя и фамилия* (не более 40 знаков)</h3>
-      <div class="p-inputgroup">
-        <input #inputName="ngModel" required class="p-inputtext" type="text" pInputText  [(ngModel)]="fullName" ngModel maxlength="40"
-          name="fullName" placeholder="например: Вероника Иванова" required>
-        <button #clearFullName type="button" pButton pRipple icon="pi pi-times" styleClass="p-button-danger"></button>
-
-      </div>
-    <div *ngIf="inputName.invalid " class = "bottom" style = "font-size: 12px; color: red;">
-          * - обязательно заполните это поле
-      </div>
-
-
-
-      <h3>Дополнительные сведения (не более 60 знаков)</h3>
-
-      <div class="p-inputgroup bottom">
-        <input #inputClass class="p-inputtext" type="text" pInputText [(ngModel)]="class" ngModel maxlength="60"
-          name="class" placeholder='например: ученица 3 класса "В"'>
-
-        <button #clearClass type="button" pButton pRipple icon="pi pi-times" styleClass="p-button-danger"></button>
-
-
-      </div>
-
-      <h3>Название учреждения, организации, коллектива (не более 100 знаков)</h3>
-
-      <div class="p-inputgroup bottom">
-        <input #inputInstitute class="p-inputtext" type="text" pInputText [(ngModel)]="institute" ngModel
-          maxlength="100" name="institute" placeholder='например: ГБОУ "Школа №1234 имени Юрия Гагарина г.Тольятти Самарской области'>
-        <button #clearInstitute type="button" pButton pRipple icon="pi pi-times" styleClass="p-button-danger"></button>
-      </div>
-
-      <div style="text-align: right; width: 100%; padding-top: 20px;">
-        <button #submit pButton type=" button" label="Оформить" icon="pi pi-check" [disabled]="inputName.invalid"></button>
-        <button #clear pButton type="button" label="Очистить" icon="pi pi-times" class="p-button-secondary"
-          [style]="{'margin-left': '.5em'}">
-        </button>
-
-      </div>
-
-      <div style="text-align: left; width: 100%; padding-top: 100px;">
-        <p>Нажимая на кнопку "Оформить", вы соглашаетесь с <a href="https://starikam.org/privacy/" >политикой конфиденциальности</a></p>
-        <p>Если у вас возникли вопросы при оформлении благодарности, свяжитесь, пожалуйста, с координатором проекта Оксаной Кустовой
-          <a href="mailto:{{myName}}@{{domain}}.org">{{myName}}@{{domain}}.org</a></p>
-
-      </div>
-
-
-
-    </p-card>
-
-  </div>
-  <div class="right">
-
-    <p-card styleClass="p-card-shadow"
-      [style]="{'width': '100%', 'height': '100%', 'padding-left': '20px', 'padding-right': '20px' }">
-
-      <!-- <br /><br /> -->
-      <div style="text-align: center; width: 100%; ">
-        <div style="text-align: right; width: 596px; padding-bottom: 20px; margin-left: auto; margin-right: auto;">
-          <button #download pButton label="Скачать" icon="pi pi-download" [disabled]="disable"></button>
-          <button #printJPEG pButton label="Распечатать" icon="pi pi-print" [style]="{'margin-left': '.5em'}" [disabled]="disable">
-          </button>
-        </div>
-        <canvas #myCanvas width="596" height="842" style="border:1px solid #d3d3d3; ">
-
-        </canvas>
-
-      </div>
-
-
-    </p-card>
-  </div>
-</div>
+  </p-tabPanel>
+  <p-tabPanel header="Форма для дошкольников и младшеклассников">
+    <app-younger></app-younger>
+  </p-tabPanel>
+</p-tabView>

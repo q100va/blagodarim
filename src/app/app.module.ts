@@ -7,15 +7,20 @@ import { FormComponent } from './form/form.component';
 
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
-import { FormsModule } from '@angular/forms';
+import {TabViewModule} from 'primeng/tabview';
 
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { YoungerComponent } from './younger/younger.component';
+import { OlderComponent } from './older/older.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    YoungerComponent,
+    OlderComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardModule,
     ButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TabViewModule
 
 
   ],
