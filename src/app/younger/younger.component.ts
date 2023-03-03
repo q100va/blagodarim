@@ -76,7 +76,7 @@ export class YoungerComponent implements OnInit {
 
   ngAfterViewInit(): void {
     let img = new Image();
-    img.src = 'assets/winter32.jpg';
+    img.src = 'assets/spring.jpg';
     let ctx = this.myCanvas.nativeElement.getContext('2d');
     let myCanvas = this.myCanvas.nativeElement;
     let submit = this.submit.nativeElement;
