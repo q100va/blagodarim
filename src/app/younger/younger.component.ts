@@ -91,7 +91,7 @@ export class YoungerComponent implements OnInit {
     let text1: string =
       'От всей души благодарим тебя за участие в поздравлении с праздниками бабушек и дедушек, живущих в домах престарелых. Твои открытки подарят им праздник и радость.';
     let text2: string =
-      'Желаем тебе быть счастливым и веселым! Пусть у тебя будет много хороших друзей!';
+      'Желаем тебе быть счастливым и веселым!                          Пусть у тебя будет много хороших друзей!';
 
     img.addEventListener(
       'load',
@@ -99,7 +99,7 @@ export class YoungerComponent implements OnInit {
         ctx.drawImage(img, 0, 0);
         ctx.font = '25px Verdana';
         ctx.textAlign = 'center';
-        ctx.fillText('ДОРОГОЙ ДРУГ!', 298, 210);
+        ctx.fillText('ДОРОГОЙ ДРУГ!', 298, 280);
         ctx.font = '15px Arial';
 
         this.longText(500, 26, 298, 380, text1, ctx);
