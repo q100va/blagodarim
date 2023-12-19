@@ -99,7 +99,7 @@ export class YoungerComponent implements OnInit {
         ctx.drawImage(img, 0, 0);
         ctx.font = '25px Verdana';
         ctx.textAlign = 'center';
-        ctx.fillText('ДОРОГОЙ ДРУГ!', 298, 210);
+      //  ctx.fillText('ДОРОГОЙ ДРУГ!', 298, 210);
         ctx.font = '15px Arial';
 
         this.longText(500, 26, 298, 380, text1, ctx);
