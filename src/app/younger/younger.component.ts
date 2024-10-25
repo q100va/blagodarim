@@ -76,7 +76,7 @@ export class YoungerComponent implements OnInit {
 
   ngAfterViewInit(): void {
     let img = new Image();
-    img.src = 'assets/spring32.jpg';
+    img.src = 'assets/autumn2.jpg';
     let ctx = this.myCanvas.nativeElement.getContext('2d');
     let myCanvas = this.myCanvas.nativeElement;
     let submit = this.submit.nativeElement;
@@ -102,7 +102,7 @@ export class YoungerComponent implements OnInit {
       //  ctx.fillText('ДОРОГОЙ ДРУГ!', 298, 210);
         ctx.font = '15px Arial';
 
-        this.longText(500, 26, 298, 380, text1, ctx);
+        this.longText(500, 26, 298, 380+40, text1, ctx);
         this.longText(500, 26, 298, this.paragraphY, text2, ctx);
 
         ctx.fillText(
@@ -122,8 +122,8 @@ export class YoungerComponent implements OnInit {
         ctx.font = '12px Verdana';
         ctx.textAlign = 'left';
        //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
-        ctx.fillText('Твой фонд "Старость в радость"', 337, this.paragraphY+20);
-        ctx.fillText('Москва, ' + dateString, 337, this.paragraphY+50);
+        ctx.fillText('Твой фонд "Старость в радость"', 337, this.paragraphY+80);
+        ctx.fillText('Москва, ' + dateString, 337, this.paragraphY+110);
       },
       false
     );
