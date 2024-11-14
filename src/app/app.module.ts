@@ -8,6 +8,9 @@ import { FormComponent } from './form/form.component';
 import {CardModule} from 'primeng/card';
 import {ButtonModule} from 'primeng/button';
 import {TabViewModule} from 'primeng/tabview';
+import { ToggleButtonModule } from 'primeng/togglebutton';
+import { BrowserAnimationsModule }
+    from "@angular/platform-browser/animations";
 
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -29,7 +32,9 @@ import { OlderComponent } from './older/older.component';
     ButtonModule,
     FormsModule,
     ReactiveFormsModule,
-    TabViewModule
+    TabViewModule,
+    ToggleButtonModule,
+    BrowserAnimationsModule
 
 
   ],

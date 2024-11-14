@@ -1,5 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { PrimeNGConfig } from 'primeng/api';
+
+
 //import {TabViewModule} from 'primeng/tabview';
 
 import {
@@ -25,6 +27,7 @@ export class YoungerComponent implements OnInit {
   myName: string = 'o.kustova';
   domain: string = 'starikam';
   paragraphY: number = 0;
+  //checked: boolean = true;
 
   @ViewChild('myCanvas', { static: true }) myCanvas!: ElementRef;
   @ViewChild('inputName') inputName!: ElementRef;
@@ -76,7 +79,10 @@ export class YoungerComponent implements OnInit {
 
   ngAfterViewInit(): void {
     let img = new Image();
-    img.src = 'assets/autumn2.jpg';
+    //let imgNewYear = new Image();
+    //img.src = 'assets/autumn2.jpg';
+    img.src = 'assets/newYear2025.jpg';
+    //imgNewYear.src = 'assets/newYear2025.jpg';
     let ctx = this.myCanvas.nativeElement.getContext('2d');
     let myCanvas = this.myCanvas.nativeElement;
     let submit = this.submit.nativeElement;
@@ -122,8 +128,8 @@ export class YoungerComponent implements OnInit {
         ctx.font = '12px Verdana';
         ctx.textAlign = 'left';
        //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
-        ctx.fillText('Твой фонд "Старость в радость"', 337, this.paragraphY+80);
-        ctx.fillText('Москва, ' + dateString, 337, this.paragraphY+110);
+        ctx.fillText('Твой фонд "Старость в радость"', 377, this.paragraphY+40);
+        ctx.fillText('Москва, ' + dateString, 377, this.paragraphY+70);
       },
       false
     );
