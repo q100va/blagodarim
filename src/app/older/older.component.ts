@@ -76,7 +76,7 @@ export class OlderComponent implements OnInit {
 
   ngAfterViewInit(): void {
     let img = new Image();
-    img.src = 'assets/winter3.jpg';
+    img.src = 'assets/spring_2025.jpg';
     let ctx = this.myCanvas.nativeElement.getContext('2d');
     let myCanvas = this.myCanvas.nativeElement;
     let submit = this.submit.nativeElement;
@@ -89,9 +89,9 @@ export class OlderComponent implements OnInit {
     let printJPEG = this.printJPEG.nativeElement;
 
     let text1: string =
-      'Выражаем вам сердечную благодарность за участие в поздравлении открытками одиноких пожилых людей и инвалидов, проживающих в домах престарелых. Каждый отправленный вами конвертик несет нужные слова и милые картинки, которые радуют душу.';
+      'Примите нашу искреннюю благодарность за участие в поздравлении открытками одиноких пожилых людей и инвалидов, проживающих в домах престарелых. Отправленные вами открытки создают праздничное настроение и придают силы.';
     let text2: string =
-      'Без вашего участия было бы невозможно подарить тысячам одиноких людей частичку радости, добра и заботы. Пусть в вашей жизни все получается, а добро возвращается!';
+      'Ваше участие позволяет тысячам одиноких людей радоваться вниманию, добру и заботе. Пусть в вашей жизни будут успех, любовь и счастье!';
 
     img.addEventListener(
       'load',
