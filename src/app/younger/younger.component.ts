@@ -95,9 +95,9 @@ export class YoungerComponent implements OnInit {
     let printJPEG = this.printJPEG.nativeElement;
 
     let text1: string =
-      'От всей души благодарим тебя за участие в поздравлении с праздниками бабушек и дедушек, живущих в домах престарелых. Твои открытки подарят им праздник и радость.';
+      'Спасибо тебе от всего сердца за то, что ты помогаешь поздравлять бабушек и дедушек, которые живут в домах престарелых. Твоя открытка обязательно подарит им улыбку и праздничное настроение.';
     let text2: string =
-      'Желаем тебе счастья, здоровья и радости!';
+      'Желаем тебе здоровья, радости и успехов!';
 
     img.addEventListener(
       'load',
@@ -126,10 +126,10 @@ export class YoungerComponent implements OnInit {
           '.' +
           date.getFullYear();
         ctx.font = '12px Verdana';
-        //ctx.textAlign = 'left';
+        ctx.textAlign = 'left';
        //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
-        ctx.fillText('Твой фонд "Старость в радость"', 377, this.paragraphY+40);
-        ctx.fillText('Москва, ' + dateString, 377, this.paragraphY+70);
+        ctx.fillText('Твой фонд "Старость в радость"', 377-177, this.paragraphY+40);
+        ctx.fillText('Москва, ' + dateString, 377-177, this.paragraphY+70);
       },
       false
     );

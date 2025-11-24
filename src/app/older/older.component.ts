@@ -66,10 +66,10 @@ export class OlderComponent implements OnInit {
       }
     }
     ctx.fillText(line, marginLeft, marginTop);
-    return (this.paragraphY = marginTop + lineHeight+10);
+    return (this.paragraphY = marginTop + lineHeight + 10);
   }
 
-  fillWhite(ctx: CanvasRenderingContext2D ) {
+  fillWhite(ctx: CanvasRenderingContext2D) {
     ctx.fillStyle = 'white';
     ctx.fillRect(14, 225, 564, 130);
   }
@@ -89,9 +89,9 @@ export class OlderComponent implements OnInit {
     let printJPEG = this.printJPEG.nativeElement;
 
     let text1: string =
-      'Примите нашу искреннюю благодарность за участие в поздравлении открытками одиноких пожилых людей и инвалидов, проживающих в домах престарелых. Отправленные вами открытки создают праздничное настроение и придают силы.';
+      'Примите нашу глубокую признательность за участие в поздравлении открытками жителей домов престарелых. Благодаря полученным от вас весточкам в их жизни появляется праздничное настроение и чувствуется дополнительная поддержка.';
     let text2: string =
-      'Ваше участие позволяет одиноким людям радоваться вниманию, добру и заботе. Пусть в вашей жизни будут успех, любовь и счастье!';
+      'Ваше внимание дарит одиноким людям радость, ощущение заботы и тепла. Мы искренне желаем вам успехов во всех ваших делах,       добра и счастливых событий!';
 
     img.addEventListener(
       'load',
@@ -105,11 +105,7 @@ export class OlderComponent implements OnInit {
         this.longText(500, 26, 298, 380, text1, ctx);
         this.longText(500, 26, 298, this.paragraphY, text2, ctx);
 
-        ctx.fillText(
-          '',
-          298,
-          this.paragraphY
-        );
+        ctx.fillText('', 298, this.paragraphY);
 
         let date: Date = new Date();
         let dateString: string;
@@ -121,9 +117,13 @@ export class OlderComponent implements OnInit {
           date.getFullYear();
         ctx.font = '12px Verdana';
         ctx.textAlign = 'left';
-       //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
-        ctx.fillText('Директор БФ "Старость в радость"', 157, this.paragraphY+80);
-        ctx.fillText('Москва, ' + dateString, 157, this.paragraphY+100);
+        //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
+        ctx.fillText(
+          'Директор БФ "Старость в радость"',
+          157,
+          this.paragraphY + 80
+        );
+        ctx.fillText('Москва, ' + dateString, 157, this.paragraphY + 100);
       },
       false
     );
