@@ -126,7 +126,7 @@ export class YoungerComponent implements OnInit {
           '.' +
           date.getFullYear();
         ctx.font = '12px Verdana';
-        ctx.textAlign = 'left';
+        //ctx.textAlign = 'left';
        //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
         ctx.fillText('Твой фонд "Старость в радость"', 377, this.paragraphY+40);
         ctx.fillText('Москва, ' + dateString, 377, this.paragraphY+70);
