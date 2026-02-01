@@ -120,10 +120,10 @@ export class OlderComponent implements OnInit {
         //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
         ctx.fillText(
           'Директор БФ "Старость в радость"',
-          147,
-          this.paragraphY + 80
+          127,
+          this.paragraphY + 90
         );
-        ctx.fillText('Москва, ' + dateString, 147, this.paragraphY + 100);
+        ctx.fillText('Москва, ' + dateString, 127, this.paragraphY + 110);
       },
       false
     );
