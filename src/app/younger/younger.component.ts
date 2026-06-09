@@ -81,7 +81,7 @@ export class YoungerComponent implements OnInit {
     let img = new Image();
     //let imgNewYear = new Image();
     //img.src = 'assets/autumn2.jpg';
-    img.src = 'assets/summer_2026.png';
+    img.src = 'assets/summer_2026_small.png';
     //imgNewYear.src = 'assets/newYear2025.jpg';
     let ctx = this.myCanvas.nativeElement.getContext('2d');
     let myCanvas = this.myCanvas.nativeElement;
