@@ -76,7 +76,7 @@ export class OlderComponent implements OnInit {
 
   ngAfterViewInit(): void {
     let img = new Image();
-    img.src = 'assets/summer_2026_main.png';
+    img.src = 'assets/summer_2026_main_.png';
     let ctx = this.myCanvas.nativeElement.getContext('2d');
     let myCanvas = this.myCanvas.nativeElement;
     let submit = this.submit.nativeElement;
@@ -120,10 +120,10 @@ export class OlderComponent implements OnInit {
         //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
         ctx.fillText(
           'Директор БФ "Старость в радость"',
-          127,
+          127-7,
           this.paragraphY + 90
         );
-        ctx.fillText('Москва, ' + dateString, 127, this.paragraphY + 110);
+        ctx.fillText('Москва, ' + dateString, 127-7, this.paragraphY + 110);
       },
       false
     );
