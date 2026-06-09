@@ -128,8 +128,8 @@ export class YoungerComponent implements OnInit {
         ctx.font = '12px Verdana';
         ctx.textAlign = 'left';
        //ctx.fillText('Елизавета Олескина', 157, this.paragraphY+60);
-        ctx.fillText('Твой фонд "Старость в радость"', 377-197, this.paragraphY+40);
-        ctx.fillText('Москва, ' + dateString, 377-197, this.paragraphY+70);
+        ctx.fillText('Твой фонд "Старость в радость"', 377, this.paragraphY+40);
+        ctx.fillText('Москва, ' + dateString, 377, this.paragraphY+70);
       },
       false
     );
